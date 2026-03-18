@@ -1,14 +1,14 @@
-FROM alpine:3.14
+FROM alpine:latest
 
-RUN apk add --no-cache \
-  curl \
-  bash \
-  git \
-  build-base \
-  rust \
-  cargo
+WORKDIR /root/
 
-RUN cargo install mdbook
+RUN apk add mdbook
+
+COPY . .
+
+CMD ["mdbook", "serve", "-n", "0.0.0.0", "-p", "3000"]
+
+EXPOSE 3000
 
 
 

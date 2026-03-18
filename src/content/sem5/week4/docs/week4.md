@@ -63,37 +63,30 @@ Docker refers to these Sandboxed environments as conatiners.
 #### 1. Update Your System
 
 First, ensure system's package database is up-to-date. Open your terminal and run:
-~~~
+```bash
 sudo pacman -Syyu
-~~~
-{: .language-bash}
-
+```
 
 #### 2. Install Docker
 
 Install the **Docker** package from the official Arch repositories.
-~~~
+```bash
 sudo pacman -S docker
-~~~
-{: .language-bash}
-
+```
 
 #### 3. Start and Enable the Docker Service
 
 After installation, you need to start the Docker service and enable it to launch automatically on system boot.
 
 * **Start the *docker.service* now:**
-    ~~~
+    ```bash
     sudo systemctl start docker.service
-    ~~~
-    {: .language-bash}
+    ```
 
 * **Enable the *docker.service* for startup:**
-    ~~~
+    ```bash
     sudo systemctl enable docker.service
-    ~~~
-    {: .language-bash}
-
+    ```
 
 #### 4. Add Your User to the Docker Group (Optional but Recommended)
 
