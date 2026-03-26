@@ -1,11 +1,4 @@
-# Week 2 - Session 1 - Introduction to Python
-
-## Learning Objectives
-
-- Learn the basics of the Python REPL
-- Learn the basics of Python syntax
-- Learn the basics of functions
-- Learn the basics of loops
+# Week 2 - Introduction to Python
 
 ### Introduction to Python
 
@@ -58,9 +51,7 @@ The "Gateways" act as **Producers** (creating data), and our "RiskEngine" acts a
 
 ---
 
-
-
-# Week 2 - Session 2 - REST APIs
+# Week 2 - REST APIs
 
 ## Comprehensive Guide to REST APIs and Modern API Architecture
 
@@ -116,29 +107,15 @@ Status codes let the client know the result of their request. Below are the main
 
 * **1xx (Informational):** The request was received, and the process is continuing (e.g., `100 Continue`).
 * **2xx (Successful):** The request was successfully accepted.
-* *Example:* `200 OK`, `201 Created`.
-
-
 * **3xx (Redirection):** Further action is required by the client to complete the request.
-* *Example:* `301 Moved Permanently`.
-
-
 * **4xx (Client Error):** The request contains bad syntax or cannot be fulfilled due to client-side issues.
-* *Example:* `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, `429 Too Many Requests`.
-
-
 * **5xx (Server Error):** The server failed to process a seemingly valid request.
-* *Example:* `500 Internal Server Error`, `502 Bad Gateway`, `503 Service Unavailable`, `504 Gateway Timeout`.
-
-
 
 ### 9. Error Handling
 
 APIs must handle errors gracefully. Instead of throwing raw stack traces, a standard REST API should return an appropriate 4xx or 5xx status code alongside a structured JSON payload containing a clear, human-readable error message and standard error codes to help developers debug the issue efficiently.
 
 ### 10. REST vs GraphQL vs gRPC
-
-Below is a comparison of modern API architectural styles to select an appropriate protocol:
 
 | Criteria | REST | GraphQL | gRPC |
 | --- | --- | --- | --- |

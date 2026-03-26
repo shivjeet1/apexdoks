@@ -44,8 +44,6 @@ Apart from the ones mentioned before, these are the main players in the CAASM/As
 * **SOC2 / ISO 27001:** The big compliance audits. ApexaiQ is used to automate the "Inventory" part of these audits, which usually takes months to do manually.
 * **API Rate Limiting:** A technical hurdle. When ApexaiQ pulls data from Axonius or AWS, it has to be careful not to ask too fast, or it will be temporarily blocked.
 
----
-
 ### Core Research Topics
 
 **1. Cyber Assets & Discovery**
@@ -68,17 +66,9 @@ Apart from the ones mentioned before, these are the main players in the CAASM/As
 * **ITSM:** Focuses on service and tickets. (Fixing a user's broken laptop.)
 * **CMDB:** Shows relationships. (If this Server goes down, which App will break?)
 
-
 **4. Security Tools**
 * **EDR(Endpoint Detection & Response):** The security guard on the laptop (e.g., CrowdStrike).
 * **XDR(eXtended Detection & Response):** The full CCTV system for the whole network.
 * **CAASM(Cyber Asset Attack Surface Management** (ApexaiQ):** The auditor who checks if the EDR is actually installed on every machine.
 
 ---
-
-### Research Tasks Checklist
-- [x] Understand why ApexaiQ is better than just using a CMDB.
-- [x] Difference between EDR (Real-time) and CAASM (Auditing).
-- [x] How Multi-tenancy works for an MSP managing 50 clients.
-- [x] Why False Positives are the biggest enemy of a Security Analyst.
-- [x] The impact of Technical Debt on an organization's attack surface.

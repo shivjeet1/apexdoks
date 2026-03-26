@@ -1,1 +1,0 @@
-# walpaprdl setup

@@ -15,70 +15,7 @@ Docker refers to these Sandboxed environments as conatiners.
 - Containers are designed to run consistently across different computing environments, making them portable and efficient.
 - Containers are isolated from each other and each bundle their own separate software.
 
-### Installation of Docker on Arch Linux
-
-#### 1. Update Your System
-
-First, ensure system's package database is up-to-date. Open your terminal and run:
-~~~
-sudo pacman -Syyu
-~~~
-{: .language-bash}
-
-
-#### 2. Install Docker
-
-Install the **Docker** package from the official Arch repositories.
-~~~
-sudo pacman -S docker
-~~~
-{: .language-bash}
-
-
-#### 3. Start and Enable the Docker Service
-
-After installation, you need to start the Docker service and enable it to launch automatically on system boot.
-
-* **Start the *docker.service* now:**
-    ~~~
-    sudo systemctl start docker.service
-    ~~~
-    {: .language-bash}
-
-* **Enable the *docker.service* for startup:**
-    ~~~
-    sudo systemctl enable docker.service
-    ~~~
-    {: .language-bash}
-
-
-#### 4. Add Your User to the Docker Group (Optional but Recommended)
-
-To run `docker` commands without needing to type `sudo` every time, you must add your user to the `docker` group. This group is created automatically during the package installation.
-
-Replace `your-username` with your actual username, or simply use the `$USER` variable.
-
-~~~
-sudo usermod -aG docker $USER
-~~~
-{: .language-bash}
-
-**Important:** For this change to take effect, you must **log out and log back in**, or simply reboot your system.
-
-#### 5. Verify the Installation
-
-Verify the installation by running checking docker version using following command 
-~~~
-docker -v 
-~~~
-{: .language-bash}
-
-You should now be able to see Docker Version as output in your terminal.
-
-***Output***
-- ![docker-version](../../../../assets/images/docker-version.png)
-
-#### 6. Run Hello World 
+####  Run Hello World 
 
 After logging back in, you can verify that Docker is installed and running correctly by executing the classic "hello-world" container.
 
@@ -88,9 +25,6 @@ docker run hello-world
 {: .language-bash}
 
 The installation was successful, you will see a message beginning with "Hello from Docker!". You now have a fully functional Docker setup on your Arch Linux machine.
-
-***Output***
-- ![docker-output](../../../../assets/images/docker.png)
 
 ---
 
