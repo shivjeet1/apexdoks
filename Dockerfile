@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-WORKDIR /root/
+WORKDIR /root
 
 RUN apk add mdbook
 
